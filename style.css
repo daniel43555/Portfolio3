@@ -3,8 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Winky Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    font-weight: <weight>;
     font-style: normal;
 }
 
@@ -39,7 +40,8 @@ h2.title {
     display: flex;
     gap: 0.3em;
     margin-left: 9.7em;
-    margin-bottom: 1em;
+    margin-bottom: 0.4em;
+    font-weight: 600;
 }
 
 h2.title span {
@@ -49,13 +51,14 @@ h2.title span {
     display: flex;
     gap: 0.3em;
     margin-bottom: 1em;
+    font-weight: 600;
 }
 
 /* cabeçalho style */
 
 header {
-    padding: 15px 3%;
     width: 100%;
+    padding: 0 50px;
     position: fixed;
     margin: auto;
     display: flex;
@@ -78,22 +81,22 @@ header nav {
 }
 
 header a {
-    color: rgba(53, 37, 37, 0.897);
+    color: rgba(255, 255, 255, 0.897);
     text-decoration: none;
     display: inline-block;
-    justify-content: space-between;
-    font-weight: 900;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 25px;
 
 }
 
 header>.interface h1 {
     color: rgb(255, 255, 255);
-    font-size: 70px;
+    font-size: 50px;
+    font-weight: 500;
 }
 
 header a:hover {
-    color: black;
+    color: rgb(139, 128, 128);
     transform: scale(1.1);
     transition: .2s;
 }
@@ -114,22 +117,22 @@ header .btn-contato button {
     margin-top: 12px;
     padding: 12px 35px;
     font-size: 25px;
-    font-weight: 800;
-    background-color: #52352d;
-    color: #fff;
+    font-weight: 600;
+    background-color: #fdfdfd;
+    color: #000000;
     border: 0;
     border-radius: 4em;
     cursor: pointer;
 }
 
 header .btn-contato button:hover {
-    box-shadow: 0 0 8px #4b312b;
+    box-shadow: 0 0 8px #4e4240;
     transition: .2s;
 }
 
 /* Estilo do Main */
 section.topo {
-    height: 100%;
+    width: 100%;
 }
 
 section.topo .flex {
@@ -178,12 +181,13 @@ section.topo .flex .btn-contato button {
     padding: 30px 50px;
     font-size: 22px;
     font-weight: 800;
-    background-color: #52352d;
+    background-color: #000000;
     color: #fff;
     border: 0;
     border-radius: 4em;
     cursor: pointer;
     margin-left: 2em;
+    margin-bottom: 1em;
 }
 
 section.topo .flex .btn-contato button:hover {
@@ -217,8 +221,30 @@ section.Habilidades .flex {
     margin: auto;
     align-items: center;
     justify-content: center;
+    gap: 60px;
 }
 
-section.Habilidades .flex {
+.Habilidades .habilidades-box {
     margin: auto;
+    color: #000000;
+    padding: 40px;
+    font-size: 20px;
+    border: 2px solid rgb(63, 40, 40);
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.Habilidades .habilidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px;
+}
+
+.Habilidades .habilidades-box i {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+
+.Habilidades .habilidades-box h3 {
+    font-size: 33px;
+    margin: 15px 0;
 }
