@@ -1,0 +1,36 @@
+Aqui está uma personagem fictícia para um portfólio de programação:
+
+Nome: Lucas Andrade
+Idade: 27 anos
+Localização: São Paulo, Brasil
+Profissão: Desenvolvedor Full Stack
+Especialização: React, Node.js, TypeScript, PostgreSQL
+Experiência: 5 anos no setor de tecnologia
+
+Sobre
+Lucas é um desenvolvedor apaixonado por tecnologia e inovação. Ele começou sua carreira como estagiário em uma startup e rapidamente evoluiu para posições de liderança técnica. Atualmente, trabalha como desenvolvedor full stack, criando aplicações escaláveis e eficientes.
+
+Habilidades
+Front-end: React, Next.js, Tailwind CSS, Styled Components
+
+Back-end: Node.js, Express, NestJS
+
+Banco de Dados: PostgreSQL, MongoDB, Firebase
+
+DevOps: Docker, AWS, CI/CD
+
+Outros: Testes unitários (Jest, Cypress), Metodologias Ágeis (Scrum, Kanban)
+
+Projetos
+TaskFlow: Um gerenciador de tarefas colaborativo para equipes ágeis.
+
+DevFinder: Aplicação que conecta desenvolvedores freelancers a empresas.
+
+EcoShop: E-commerce sustentável com marketplace de produtos ecológicos.
+
+Contato
+GitHub: github.com/lucasandrade-dev
+
+LinkedIn: linkedin.com/in/lucasandrade
+
+Email: lucas.andrade@devmail.com

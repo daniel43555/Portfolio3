@@ -1,0 +1,196 @@
+/* Main Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: #e1e1e1;
+    height: 100vh;
+    display: block;
+}
+
+.interface {
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 1% 5%;
+}
+
+h2.title {
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    display: flex;
+    gap: 1em;
+}
+
+/* cabeçalho style */
+
+header {
+    padding: 30px 3%;
+    width: auto;
+    margin: auto;
+}
+
+header>.interface {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 150vh;
+}
+
+header a {
+    color: rgba(53, 37, 37, 0.897);
+    text-decoration: none;
+    display: inline-block;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 22px;
+
+}
+
+header a h1 {
+    color: rgba(0, 0, 0, 0.897);
+    justify-content: space-between;
+
+}
+
+header a:hover {
+    color: black;
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 1em 16em;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 2.5rem;
+}
+
+
+header .btn-contato button {
+    margin-left: 20px;
+    margin-top: 12px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: #52352d;
+    color: #fff;
+    border: 0;
+    border-radius: 4em;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0 0 8px #4b312b;
+    transition: .2s;
+}
+
+/* Estilo do Main */
+section.topo {
+    height: 100vh;
+}
+
+section.topo .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+section.topo .flex h1 {
+    font-size: 60px;
+    margin-top: 2em;
+    font-weight: 800;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    line-height: 60px;
+}
+
+section.topo .flex h1 span {
+    color: #4b312b;
+
+}
+
+section.topo .flex p {
+    font-size: 25px;
+    font-weight: 600;
+    color: #4b312b;
+    margin-left: 2.5em;
+    margin-bottom: 5em;
+}
+
+
+.img-topo img {
+    height: 400px;
+    margin-top: 5em;
+    margin-left: 5em;
+    border-radius: 50%;
+    border: 1em solid;
+    background-color: gray;
+    position: relative;
+    animation: animacao 2s ease-in-out infinite alternate;
+}
+
+
+section.topo .flex .btn-contato button {
+    padding: 30px 50px;
+    font-size: 22px;
+    font-weight: 800;
+    background-color: #52352d;
+    color: #fff;
+    border: 0;
+    border-radius: 4em;
+    cursor: pointer;
+    margin-left: 2em;
+}
+
+section.topo .flex .btn-contato button:hover {
+    box-shadow: 0 0 8px #4b312b;
+    transform: scale(1.05);
+}
+
+@keyframes animacao {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* Style Habilities */
+
+section.Habilidades {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+
+}
+
+section.Habilidades .flex {
+    margin: auto;
+}
