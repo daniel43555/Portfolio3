@@ -14,36 +14,60 @@
 
 body {
     background-color: #e1e1e1;
-    height: 100vh;
     display: block;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 5% 0;
 }
 
 .interface {
     max-width: 100%;
     margin: 0 auto;
-    justify-content: center;
     padding: 1% 5%;
 }
 
 h2.title {
-    color: black;
-    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
     text-align: center;
     display: flex;
-    gap: 1em;
+    gap: 0.3em;
+    margin-left: 9.7em;
+    margin-bottom: 1em;
+}
+
+h2.title span {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    gap: 0.3em;
+    margin-bottom: 1em;
 }
 
 /* cabeçalho style */
 
 header {
-    padding: 30px 3%;
-    width: auto;
+    padding: 15px 3%;
+    width: 100%;
+    position: fixed;
     margin: auto;
+    display: flex;
+    top: 0;
+    left: 0;
+    transition: .2s;
+    z-index: 10;
+    background-color: black;
 }
 
 header>.interface {
     display: flex;
-    height: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -51,7 +75,6 @@ header>.interface {
 header nav {
     display: flex;
     justify-content: space-between;
-    width: 150vh;
 }
 
 header a {
@@ -60,14 +83,13 @@ header a {
     display: inline-block;
     justify-content: space-between;
     font-weight: 900;
-    font-size: 22px;
+    font-size: 30px;
 
 }
 
-header a h1 {
-    color: rgba(0, 0, 0, 0.897);
-    justify-content: space-between;
-
+header>.interface h1 {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
 }
 
 header a:hover {
@@ -87,12 +109,11 @@ header nav ul li {
     padding: 0 2.5rem;
 }
 
-
 header .btn-contato button {
     margin-left: 20px;
     margin-top: 12px;
     padding: 12px 35px;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 800;
     background-color: #52352d;
     color: #fff;
@@ -108,13 +129,12 @@ header .btn-contato button:hover {
 
 /* Estilo do Main */
 section.topo {
-    height: 100vh;
+    height: 100%;
 }
 
 section.topo .flex {
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 100%;
 }
 
@@ -123,6 +143,7 @@ section.topo .flex h1 {
     margin-top: 2em;
     font-weight: 800;
     margin-bottom: 1em;
+    margin-top: 4em;
     margin-left: 1em;
     line-height: 60px;
 }
@@ -184,11 +205,18 @@ section.topo .flex .btn-contato button:hover {
 
 section.Habilidades {
     display: flex;
-    gap: 2em;
-    justify-content: center;
+    gap: 0em;
+    justify-content: space-between;
     align-items: center;
-    height: 85vh;
+    width: 100%;
+    background-color: gray;
 
+}
+
+section.Habilidades .flex {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 section.Habilidades .flex {
