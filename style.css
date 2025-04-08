@@ -298,3 +298,30 @@ section.sobre {
     transform: scale(1.05);
     box-shadow: 0 0 8px;
 }
+
+/* Projetos Style */
+
+section.projetos .interface {
+    padding: 80px 4%;
+    background-color: black;
+    box-shadow: 0 0 40px 10px gray;
+}
+
+section.projetos .flex {
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: #fdfdfd;
+
+}
+
+.interface h2 {
+    color: #fff;
+    font-size: 48px;
+    margin-left: 15.5em;
+    margin-bottom: 2em;
+}
