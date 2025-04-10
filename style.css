@@ -36,10 +36,9 @@ section {
 .Habilidades h2.title {
     color: rgb(255, 255, 255);
     font-size: 48px;
-    text-align: center;
     display: flex;
     gap: 0.3em;
-    margin-left: 9.7em;
+    margin-left: 12.3em;
     margin-bottom: 0.4em;
     font-weight: 600;
 }
@@ -285,7 +284,7 @@ section.sobre {
     padding: 0.5em;
 }
 
-.sobre .txt-sobre .btn-social button {
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -369,18 +368,28 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    justify-content: center;
+    margin-left: 32.2em;
 }
 
-form input {
+form input,
+form textarea {
     width: 100%;
     background-color: rgba(49, 49, 49, 0.692);
     border: 0;
     outline: 0;
     padding: 2em 1.5em;
     border-radius: 1em;
-    color: black;
     font-size: 18px;
+}
+
+form textarea::placeholder {
+    color: black;
+    font-weight: 700;
+}
+
+form textarea {
+    resize: none;
+    padding-bottom: 150px;
 }
 
 form input::placeholder {
@@ -394,8 +403,8 @@ form input::placeholder {
     font-size: 48px;
     font-weight: 800;
     margin-left: 11em;
-    margin-bottom: 1.1em;
-    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    margin-top: 0.0001em;
     text-align: center;
     color: rgb(49, 49, 49);
 }
@@ -405,4 +414,60 @@ form input::placeholder {
     font-weight: 800;
     color: #000000;
 
+}
+
+form .btn-enviar {
+    margin-top: 1em;
+    text-align: center;
+
+}
+
+form .btn-enviar input {
+    width: 10em;
+    background-color: #000000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar input:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px black;
+}
+
+/* Style rodape */
+
+footer {
+    padding: 60px 4%;
+    background-color: rgb(49, 49, 49);
+    box-shadow: 0 0 36px 8px rgb(59, 59, 59);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    border-bottom: 2px solid #000000;
+}
+
+footer .line-footer p i {
+    color: #000000;
+    font-size: 26px;
+}
+
+footer .line-footer p a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 0.5em;
+}
+
+@media screen and (max-width: 1700px) {
+
+    .menu-desk,
+    .btn-contato {
+        display: none;
+    }
 }
