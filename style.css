@@ -363,12 +363,19 @@ section.formulario {
 }
 
 form {
-    max-width: 500px;
-    margin: 0 auto;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
-    margin-left: 32.2em;
+}
+
+.formulario .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 form input,
@@ -397,16 +404,21 @@ form input::placeholder {
     font-weight: 900;
 }
 
-.formulario h2 {
+.formulario .title {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 0.3em;
     font-size: 48px;
     font-weight: 800;
-    margin-left: 11em;
-    margin-bottom: 0.5em;
-    margin-top: 0.0001em;
+    margin: 0;
+    margin-bottom: 1em;
     text-align: center;
     color: rgb(49, 49, 49);
+}
+
+.formulario .title span {
+    margin: 0;
 }
 
 .formulario .interface span {
