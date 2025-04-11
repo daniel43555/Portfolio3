@@ -33,31 +33,12 @@ section {
     padding: 1% 5%;
 }
 
-.Habilidades h2.title {
-    color: rgb(255, 255, 255);
-    font-size: 48px;
-    display: flex;
-    gap: 0.3em;
-    margin-left: 12.3em;
-    margin-bottom: 0.4em;
-    font-weight: 600;
-}
-
-h2.title span {
-    color: rgb(0, 0, 0);
-    font-size: 48px;
-    text-align: center;
-    display: flex;
-    gap: 0.3em;
-    margin-bottom: 1em;
-    font-weight: 600;
-}
 
 /* cabeçalho style */
 
 header {
     width: 100%;
-    padding: 0 50px;
+    padding: 0 30px;
     position: fixed;
     margin: auto;
     display: flex;
@@ -70,12 +51,13 @@ header {
 
 header>.interface {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
-header nav {
-    display: flex;
+header nav .menu-desk {
+    display: block;
     justify-content: space-between;
 }
 
@@ -91,6 +73,7 @@ header a {
 header>.interface h1 {
     color: rgb(255, 255, 255);
     font-size: 50px;
+    margin-right: 2em;
     font-weight: 500;
 }
 
@@ -100,28 +83,30 @@ header a:hover {
     transition: .2s;
 }
 
-header nav ul {
-    list-style-type: none;
+header nav ul .menu-desk {
+    margin-block-start: 2em;
+    margin-block-end: 3em;
     display: flex;
-    padding: 1em 16em;
+    justify-content: space-between;
+    padding-inline-start: 30px;
+    list-style-type: none;
 }
 
 header nav ul li {
     display: inline-block;
-    padding: 0 2.5rem;
+    padding: 0 40px;
 }
 
 header .btn-contato button {
-    margin-left: 20px;
-    margin-top: 12px;
-    padding: 12px 35px;
-    font-size: 25px;
+    padding: 1em 3em;
+    font-size: 15px;
     font-weight: 600;
     background-color: #fdfdfd;
     color: #000000;
     border: 0;
     border-radius: 4em;
     cursor: pointer;
+    margin-left: 4em;
 }
 
 header .btn-contato button:hover {
@@ -145,15 +130,12 @@ section.topo .flex h1 {
     margin-top: 2em;
     font-weight: 800;
     margin-bottom: 1em;
-    margin-top: 4em;
     margin-left: 1em;
+    margin-top: 4em;
     line-height: 60px;
-}
-
-section.topo .flex h1 span {
-    color: #4b312b;
 
 }
+
 
 section.topo .flex p {
     font-size: 25px;
@@ -219,9 +201,29 @@ section.Habilidades {
 
 section.Habilidades .flex {
     margin: auto;
+    display: flex;
     align-items: center;
-    justify-content: center;
     gap: 60px;
+}
+
+.Habilidades h2.title {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    display: flex;
+    margin-left: auto;
+    gap: 0.3em;
+    margin-bottom: 0.4em;
+    font-weight: 600;
+}
+
+h2.title span {
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    align-items: center;
+    display: flex;
+    gap: 0.3em;
+    margin-bottom: 1em;
+    font-weight: 600;
 }
 
 .Habilidades .habilidades-box {
@@ -232,6 +234,10 @@ section.Habilidades .flex {
     border: 2px solid rgb(63, 40, 40);
     border-radius: 20px;
     transition: .2s;
+}
+
+.Habilidades .habilidades-box p {
+    color: white;
 }
 
 .Habilidades .habilidades-box:hover {
@@ -352,7 +358,9 @@ section.projetos .flex {
 .interface h2 {
     color: #fff;
     font-size: 48px;
-    margin-left: 15.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 2em;
 }
 
@@ -442,6 +450,7 @@ form .btn-enviar input {
     font-weight: 800;
     cursor: pointer;
     transition: .2s;
+    text-align: center;
 }
 
 form .btn-enviar input:hover {
@@ -476,10 +485,165 @@ footer .line-footer p a {
     margin-left: 0.5em;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1020px) {
+
+    /* classes gerais */
+
+    .flex {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .topo .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* cabeçalho */
 
     .menu-desk,
     .btn-contato {
+        display: flex;
+    }
+
+    header>.interface h1 {
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0 16em;
+    }
+
+    /* topo */
+    section.topo .flex {
+        padding: 0.3em 2%;
+        display: flex;
+    }
+
+    section.topo .flex h1 {
+        font-size: 33px;
+        line-height: 35px;
+        flex-direction: column;
+        margin-left: auto;
+        margin-top: 1.5em;
+    }
+
+    section.topo .flex p {
+        font-size: 20px;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+    .img-topo img {
+        height: 350px;
+        margin-bottom: 1em;
+        border-radius: 50%;
+        border: 0.5em solid;
+        margin-left: auto;
+
+    }
+
+    section.topo .flex .btn-contato button {
+        width: 10em;
+        height: 3em;
+        text-align: center;
+        padding: 12px 35px;
+
+    }
+
+    /* habilidades */
+
+    .Habilidades h2.title {
+        color: rgb(255, 255, 255);
+        font-size: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.3em;
+        margin-top: 0.5em;
+        margin-bottom: 0.4em;
+        font-weight: 800;
+    }
+
+    /* sobre */
+    section.sobre {
+        display: flex;
+    }
+
+    .img-sobre img {
         display: none;
     }
+
+    .sobre .txt-sobre h2 {
+        font-size: 33px;
+        font-weight: 800;
+        justify-content: center;
+        margin-bottom: 1.1em;
+        margin-top: 1.3em;
+
+        flex-direction: column;
+        color: rgb(58, 53, 53);
+    }
+
+    .sobre .txt-sobre span {
+        display: none;
+    }
+
+    /* projetos */
+    .interface h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        font-size: 33px;
+        margin-left: auto;
+        margin-bottom: 2em;
+    }
+
+    section.projetos .flex {
+        justify-content: space-around;
+        align-items: center;
+        gap: 3em;
+    }
+
+    /* form */
+    .formulario .title {
+        gap: 0.3em;
+        font-size: 33px;
+        font-weight: 800;
+        margin: 0;
+        margin-bottom: 1em;
+        text-align: center;
+        color: rgb(49, 49, 49);
+    }
+
+    .formulario .interface span {
+        font-size: 33px;
+    }
+
+    section.formulario {
+        padding: 3em 4%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    form textarea {
+        padding-bottom: 100px;
+    }
+
+    form .btn-enviar input {
+        width: 10em;
+        height: 3em;
+        text-align: center;
+        padding: 12px 35px;
+    }
+
 }
