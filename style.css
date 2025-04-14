@@ -389,7 +389,7 @@ form {
 form input,
 form textarea {
     width: 100%;
-    background-color: rgba(49, 49, 49, 0.692);
+    background-color: rgba(255, 255, 255, 0.692);
     border: 0;
     outline: 0;
     padding: 2em 1.5em;
@@ -485,6 +485,12 @@ footer .line-footer p a {
     margin-left: 0.5em;
 }
 
+footer .line-footer .copy p a {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
 @media screen and (max-width: 1020px) {
 
     /* classes gerais */
@@ -492,10 +498,12 @@ footer .line-footer p a {
     .flex {
         flex-direction: column;
         display: flex;
+        align-items: center;
     }
 
     .topo .flex {
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     /* cabeçalho */
@@ -509,9 +517,8 @@ footer .line-footer p a {
         color: rgb(255, 255, 255);
         font-size: 50px;
         font-weight: 500;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+        text-align: center;
+        margin-left: 1.5em;
     }
 
     header nav ul {
@@ -583,11 +590,11 @@ footer .line-footer p a {
     .sobre .txt-sobre h2 {
         font-size: 33px;
         font-weight: 800;
-        justify-content: center;
         margin-bottom: 1.1em;
         margin-top: 1.3em;
-
+        align-items: center;
         flex-direction: column;
+        margin-left: 0.5em;
         color: rgb(58, 53, 53);
     }
 
@@ -646,4 +653,30 @@ footer .line-footer p a {
         padding: 12px 35px;
     }
 
+}
+
+/* footer */
+
+footer .flex {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+footer {
+    padding: 35px 16px;
+}
+
+footer .line-footer p i {
+    color: #000000;
+    font-size: 26px;
+
+}
+
+footer .line-footer p a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 0.5em;
+}
 }
